@@ -1,0 +1,68 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: white;
+}
+.clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.clock{
+    background: url(./images/64-649986_clock-no-hands-png-clipart-roman-numerals-clock.png)no-repeat center center ;
+    background-size: contain;
+    min-height: 400px;
+    min-width: 400px;
+    background-color:white;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    position: relative;
+}
+.btn{
+    cursor: pointer;
+    border-radius: 5px;
+}
+.needle{
+    position: absolute;
+    background-color: black;
+    left: 50%;
+    top: 50%;
+    transform-origin: bottom center;
+}
+.needle.hour{
+    transform: translate(-0%, -100%) rotate(0deg);
+    height: 65px;
+    width: 3px;
+}
+.needle.minute{
+    transform: translate(-0%, -100%) rotate(0deg);
+    height: 80px;
+    width: 3px;
+}
+.needle.second{
+    transform: translate(-0%, -100%) rotate(0deg);
+    height: 95px;
+    width: 3px;
+}
+.center-point{
+    position: absolute;
+    height: 10px;
+    width: 11px;
+    left: 49%;
+    top: 49%;
+    border-radius: 50%;
+    background-color: #e0555a;
+}
+.time{
+    font-size: 30px;
+}
+.date{
+    font-size: 20px;
+}
